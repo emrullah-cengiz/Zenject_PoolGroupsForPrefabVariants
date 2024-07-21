@@ -1,6 +1,5 @@
 # PoolGroup for Pooling Prefab Variants
 
-## Description
 A small tool I prepared to manage various variants of the same prefab in different pools while using Zenject Pools, allowing us to use this process with minimal code whenever needed.
 
 ## PoolGroup Definition
