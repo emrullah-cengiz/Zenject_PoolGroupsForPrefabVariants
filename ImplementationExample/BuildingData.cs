@@ -4,14 +4,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public enum BuildingType
-{
-    Tower,
-    Farm,
-    Wall
-}
-
 [CreateAssetMenu(menuName = "Building", fileName = "BuildingData")]
 public class BuildingData : ScriptableObject
 {
@@ -19,4 +11,11 @@ public class BuildingData : ScriptableObject
     public Sprite Sprite;
 
     public BuildingType Type;
+}
+
+public enum BuildingType
+{
+    Tower,
+    Farm,
+    Wall
 }
