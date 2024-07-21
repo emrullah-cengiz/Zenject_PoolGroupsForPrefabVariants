@@ -11,7 +11,7 @@ public abstract class MemoryPoolGroup<TGroupParamsModel, TContract, TGroupEnum, 
     where TGroupEnum : Enum
     where TPool : IMemoryPool<TGroupParamsModel, TContract>
 {
-    public TContract Spawn(TGroupParamsModel p1, TGroupEnum type) => GetPool(type).Spawn(p1);
+    public TContract Spawn(TGroupEnum type, TGroupParamsModel p1) => GetPool(type).Spawn(p1);
 }
 
 public abstract class MemoryPoolGroup<TGroupEnum, TPool> where TGroupEnum : Enum
