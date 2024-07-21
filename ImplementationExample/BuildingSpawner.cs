@@ -15,10 +15,10 @@ public class BuildingSpawner : MonoBehaviour
 
     private void Spawn(BuildingData data, Vector3 pos)
     {
-        var building = _poolGroup.Spawn(new Building.PoolGroupParams()
+        var building = _poolGroup.Spawn(data.Type, new Building.PoolGroupParams()
         {
             Data = data,
             Position = pos
-        }, data.Type);
+        });
     }
 }
